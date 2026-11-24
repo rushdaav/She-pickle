@@ -170,7 +170,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={15} className="text-[#E6B94D] shrink-0" />
-                <span>hello@shepickle.com (Sample)</span>
+                <span>connect@rushdaav.com</span>
               </li>
               <li className="pt-2">
                 <span className="inline-block px-2.5 py-1 rounded bg-[#E6B94D]/15 text-[#E6B94D] font-mono-tag text-[10px] font-bold">

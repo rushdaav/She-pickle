@@ -61,7 +61,7 @@ export const ShippingPage: React.FC<ShippingPageProps> = ({ onBack }) => {
               Due to the perishable food nature of pickles, we do not accept general product returns once delivered. However, if your glass jar arrives broken, damaged, or unsealed during courier transit, we will immediately send a <strong>FREE replacement jar</strong> or issue a complete refund.
             </p>
             <p className="bg-[#FFF5E8] p-4 rounded-xl border border-[#30231D]/10 text-xs">
-              <strong>How to report:</strong> Simply send a photo of the damaged package and your Order ID to our WhatsApp (+91 70345 13689) or email hello@shepickle.com within 48 hours of delivery.
+              <strong>How to report:</strong> Simply send a photo of the damaged package and your Order ID to our WhatsApp (+91 70345 13689) or email connect@rushdaav.com within 48 hours of delivery.
             </p>
           </div>
         </div>

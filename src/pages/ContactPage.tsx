@@ -83,7 +83,7 @@ export const ContactPage: React.FC = () => {
                     Kitchen Email
                   </span>
                   <span className="text-[11px] text-[#30231D]/70 font-mono-tag">
-                    hello@shepickle.com (Sample)
+                    connect@rushdaav.com
                   </span>
                 </div>
               </div>
