@@ -1,0 +1,548 @@
+import { PickleProduct, ReviewItem, FaqItem } from '../types';
+
+export const PRODUCTS: PickleProduct[] = [
+  {
+    id: 'beef-pickle',
+    slug: 'beef-pickle',
+    number: '01',
+    name: 'Tender Beef Pickle',
+    shortName: 'Beef Pickle',
+    tagline: 'Slow-fried succulent beef tossed in roasted hill spices.',
+    category: 'non-veg',
+    description: 'Our crown jewel. Hand-cut cubes of tender prime beef, slow-cooked in small earthen vats, fried till crisp outside and melt-in-mouth inside. Immersed in pure gingelly oil infused with toasted Kashmiri chillies, crushed garlic, and hand-plucked curry leaves.',
+    flavorProfile: 'Deep smoky heat, crunchy garlic crust, and rich umami meat tenderness.',
+    spiceLevel: 5,
+    weights: [
+      { weight: '250g', price: 340, inStock: true },
+      { weight: '400g', price: 520, inStock: true },
+      { weight: '800g', price: 980, inStock: true }
+    ],
+    ingredients: [
+      'Prime Boneless Beef Chunks',
+      'Cold-Pressed Gingelly (Sesame) Oil',
+      'Crushed Shallots & Country Garlic',
+      'Roasted Kashmiri Red Chilli Powder',
+      'Fresh Green Chillies',
+      'Curry Leaves',
+      'Natural Brewed Vinegar',
+      'Fenugreek & Mustard Seed Powder',
+      'Turmeric & Rock Salt',
+      'Asafoetida'
+    ],
+    aromaNotes: ['Roasted garlic', 'Smoky red chilli', 'Toasted curry leaves', 'Rich cured meat'],
+    pairingSuggestions: ['Hot ghee rice & dal', 'Steaming Malabar porottas', 'Crispy dosa roll', 'Curd rice bowl'],
+    storageAdvice: 'Store in a cool dry place. Use only a clean, dry wooden or steel spoon. Keep jar tightly sealed after use.',
+    shelfLife: '6 months from manufacture date (no chemical preservatives added).',
+    bgGradient: 'from-[#3A1412] via-[#2A0E0C] to-[#1E0908]',
+    accentColor: '#B52A24',
+    textColor: '#FFF5E8',
+    cardBg: '#FBF0EE',
+    pickleColor: '#6B1B17',
+    pickleOilColor: '#96241E',
+    textureDetails: 'Crisp deep-red beef cubes glistening under fiery gingelly oil with toasted curry leaves.',
+    image: '/jars/beef-pickle.jpg',
+    featured: true
+  },
+  {
+    id: 'prawns-pickle',
+    slug: 'prawns-pickle',
+    number: '02',
+    name: 'Coastal Prawns Pickle',
+    shortName: 'Prawns Pickle',
+    tagline: 'Wild sea-catch prawns in a sharp, fiery coastal marinade.',
+    category: 'non-veg',
+    description: 'Fresh wild-caught coastal prawns cleaned meticulously, lightly sun-dried, flash-fried in golden sesame oil, and bathed in a piquant gravy of crushed ginger, slit green chillies, vinegar, and fragrant mustard crust.',
+    flavorProfile: 'Bold maritime sweetness, zesty punch, and sharp aromatic chilli crisp.',
+    spiceLevel: 4,
+    weights: [
+      { weight: '250g', price: 380, inStock: true },
+      { weight: '400g', price: 590, inStock: true },
+      { weight: '800g', price: 1120, inStock: true }
+    ],
+    ingredients: [
+      'Fresh Coastal Prawns',
+      'Cold-Pressed Sesame Oil',
+      'Crushed Ginger & Garlic',
+      'Kashmiri Chilli & Spicy Birds-Eye Chilli',
+      'Mustard Seeds',
+      'Organic Coconut Toddy Vinegar',
+      'Curry Leaves',
+      'Fenugreek Powder',
+      'Sea Salt'
+    ],
+    aromaNotes: ['Coastal ginger zing', 'Warm sesame oil', 'Wild sea prawn essence', 'Tangy coconut vinegar'],
+    pairingSuggestions: ['Hot basmati rice with curd', 'Tapioca & fish curry side', 'Layered parathas', 'Toast with eggs'],
+    storageAdvice: 'Keep refrigerated after opening for extended freshness. Always use a dry spoon.',
+    shelfLife: '6 months from batch production.',
+    bgGradient: 'from-[#381611] via-[#27100D] to-[#1C0A07]',
+    accentColor: '#D14836',
+    textColor: '#FFF5E8',
+    cardBg: '#FDF1EE',
+    pickleColor: '#B03824',
+    pickleOilColor: '#D94D32',
+    textureDetails: 'Whole plump curled prawns drenched in radiant paprika and ginger-garlic emulsion.',
+    image: '/jars/prawns-pickle.jpg',
+    featured: true
+  },
+  {
+    id: 'chicken-pickle',
+    slug: 'chicken-pickle',
+    number: '03',
+    name: 'Country Chicken Pickle',
+    shortName: 'Chicken Pickle',
+    tagline: 'Farm chicken pan-roasted with hand-ground Malabar spices.',
+    category: 'non-veg',
+    description: 'Succulent bite-sized country chicken morsels marinated in heirloom spices, slow-fried till golden brown, and simmered with roasted shallots, garlic slivers, and warm peppercorn essence. An instant classic for true meat lovers.',
+    flavorProfile: 'Savory poultry richness, peppery warmth, and subtle tangy vinegar bite.',
+    spiceLevel: 4,
+    weights: [
+      { weight: '250g', price: 310, inStock: true },
+      { weight: '400g', price: 480, inStock: true },
+      { weight: '800g', price: 920, inStock: true }
+    ],
+    ingredients: [
+      'Boneless Chicken Breast & Thigh',
+      'Pure Cold-Pressed Gingelly Oil',
+      'Roasted Coriander & Tellicherry Black Pepper',
+      'Crushed Garlic Pearls',
+      'Shallots & Ginger Paste',
+      'Fresh Lemon & Brewed Vinegar',
+      'Turmeric & Rock Salt',
+      'Asafoetida & Mustard Seeds'
+    ],
+    aromaNotes: ['Black pepper warmth', 'Caramelized shallots', 'Gingelly oil', 'Pan-fried chicken'],
+    pairingSuggestions: ['Jeera rice & dal tadka', 'Steamed appams', 'Chapati rolls', 'Midnight snack with papad'],
+    storageAdvice: 'Store away from moisture. Keep lid tight after serving.',
+    shelfLife: '6 months from bottling.',
+    bgGradient: 'from-[#3B1F13] via-[#28150D] to-[#1A0C08]',
+    accentColor: '#C45728',
+    textColor: '#FFF5E8',
+    cardBg: '#FCF3ED',
+    pickleColor: '#8C3B18',
+    pickleOilColor: '#BD5725',
+    textureDetails: 'Tender fibrous chicken bites coated with thick, coarsely textured spice paste.',
+    image: '/jars/chicken-pickle.jpg',
+    featured: true
+  },
+  {
+    id: 'tuna-pickle',
+    slug: 'tuna-pickle',
+    number: '04',
+    name: 'Spiced Tuna Pickle',
+    shortName: 'Tuna Pickle',
+    tagline: 'Ocean-fresh Yellowfin tuna with roasted mustard and dry chillies.',
+    category: 'non-veg',
+    description: 'Thick, firm ocean tuna steak cut into firm cubes, cooked in small batches with cold-pressed oil, crushed garlic cloves, roasted fenugreek, and sharp vinegar. Rich in protein and overflowing with bold sea coast character.',
+    flavorProfile: 'Meaty fish firmness, roasted curry leaf crunch, and dark pepper heat.',
+    spiceLevel: 4,
+    weights: [
+      { weight: '250g', price: 350, inStock: true },
+      { weight: '400g', price: 540, inStock: true },
+      { weight: '800g', price: 1040, inStock: true }
+    ],
+    ingredients: [
+      'Fresh Yellowfin Tuna Steaks',
+      'Cold-Pressed Sesame Oil',
+      'Shallots, Garlic & Ginger',
+      'Kashmiri Chilli & Black Peppercorn',
+      'Toasted Fenugreek & Mustard',
+      'Natural Vinegar',
+      'Curry Leaves & Sea Salt'
+    ],
+    aromaNotes: ['Toasted mustard', 'Deep sea tuna richness', 'Sharp vinegar', 'Curry leaf infusion'],
+    pairingSuggestions: ['Brown boiled rice & moru curry', 'Plain kanji (rice porridge)', 'Crisp rotis', 'Rice crackers'],
+    storageAdvice: 'Store in cool ambient pantry. Refrigerate after opening to preserve oil shine.',
+    shelfLife: '6 months.',
+    bgGradient: 'from-[#331818] via-[#230F0F] to-[#150707]',
+    accentColor: '#9C2A2A',
+    textColor: '#FFF5E8',
+    cardBg: '#FAF1F0',
+    pickleColor: '#70211D',
+    pickleOilColor: '#9E3228',
+    textureDetails: 'Solid flakes of dark oceanic tuna immersed in dark ruby spice syrup.',
+    image: '/jars/tuna-pickle.jpg',
+    featured: false
+  },
+  {
+    id: 'mango-pickle',
+    slug: 'mango-pickle',
+    number: '05',
+    name: 'Heritage Raw Mango Pickle',
+    shortName: 'Mango Pickle',
+    tagline: 'Crisp green sour mangoes cured with golden mustard and asafoetida.',
+    category: 'veg',
+    description: 'The soul of Indian meals. Freshly plucked firm, unripened green mangoes cut with skin on, salted in stone jars, and steeped in aromatic cold-pressed sesame oil, freshly stone-ground mustard seeds, and fragrant whole asafoetida.',
+    flavorProfile: 'Electric sour tanginess, snappy crunchy bite, and lingering warm mustard kick.',
+    spiceLevel: 3,
+    weights: [
+      { weight: '250g', price: 210, inStock: true },
+      { weight: '400g', price: 320, inStock: true },
+      { weight: '800g', price: 590, inStock: true }
+    ],
+    ingredients: [
+      'Crisp Raw Green Mangoes',
+      'Cold-Pressed Gingelly (Sesame) Oil',
+      'Stone-Ground Mustard Seed Powder',
+      'Kashmiri Red Chilli Powder',
+      'Roasted Fenugreek Powder',
+      'Pure Compounded Hing (Asafoetida)',
+      'Natural Sea Salt & Turmeric'
+    ],
+    aromaNotes: ['Raw green fruit tartness', 'Pungent hing & mustard', 'Warm sesame oil', 'Sun-dried spices'],
+    pairingSuggestions: ['Curd rice with pomegranate', 'Sambar rice feast', 'Hot parathas with butter', 'Khichdi bowls'],
+    storageAdvice: 'Always use a dry wooden spoon. Oil layer should float on top to preserve naturally.',
+    shelfLife: '12 months from bottling.',
+    bgGradient: 'from-[#2B3819] via-[#1D2710] to-[#131A0B]',
+    accentColor: '#536B35',
+    textColor: '#FFF5E8',
+    cardBg: '#F3F6EC',
+    pickleColor: '#C48312',
+    pickleOilColor: '#E09B16',
+    textureDetails: 'Bright yellow-green firm mango chunks glistening with golden-red spice oil and mustard grit.',
+    image: '/jars/mango-pickle.jpg',
+    featured: true
+  },
+  {
+    id: 'dates-pickle',
+    slug: 'dates-pickle',
+    number: '06',
+    name: 'Sweet & Spicy Dates Pickle',
+    shortName: 'Dates Pickle',
+    tagline: 'Lush dark desert dates simmered with tamarind pulp and crushed spices.',
+    category: 'veg',
+    description: 'A feast-worthy royal delicacy. Soft, premium Arabian dates slow-steeped in rich aged vinegar, ripe tamarind nectar, garlic flakes, and a delicate kiss of toasted Kashmiri red chillies. The perfect balance between honeyed sweetness and fiery zest.',
+    flavorProfile: 'Rich velvety sweetness, mouth-watering sour undertones, and gentle spicy finish.',
+    spiceLevel: 2,
+    weights: [
+      { weight: '250g', price: 240, inStock: true },
+      { weight: '400g', price: 360, inStock: true },
+      { weight: '800g', price: 680, inStock: true }
+    ],
+    ingredients: [
+      'Pitted Arabian Black Dates',
+      'Cold-Pressed Gingelly Oil',
+      'Tamarind Extract',
+      'Country Garlic & Ginger Cloves',
+      'Mild Kashmiri Chilli Powder',
+      'Natural Cane Jaggery',
+      'Vinegar',
+      'Mustard & Fenugreek Seeds',
+      'Sea Salt'
+    ],
+    aromaNotes: ['Caramelized dates', 'Tangy tamarind pods', 'Garlic sweetness', 'Warm clove & cinnamon'],
+    pairingSuggestions: ['Biryani & raita accompaniment', 'Cheese boards & sourdough', 'Roast vegetables', 'Spiced pulao'],
+    storageAdvice: 'Store in a cool pantry. Avoid wet utensils.',
+    shelfLife: '9 months.',
+    bgGradient: 'from-[#3B1F17] via-[#2A140F] to-[#190B08]',
+    accentColor: '#A04323',
+    textColor: '#FFF5E8',
+    cardBg: '#FAF2EE',
+    pickleColor: '#4A2114',
+    pickleOilColor: '#78351D',
+    textureDetails: 'Plump molasses-dark date halves suspended in glossy, thick sweet-sour aromatic gravy.',
+    image: '/jars/dates-pickle.jpg',
+    featured: true
+  },
+  {
+    id: 'lemon-pickle',
+    slug: 'lemon-pickle',
+    number: '07',
+    name: 'Sun-Cured Lemon Pickle',
+    shortName: 'Lemon Pickle',
+    tagline: 'Juicy country lemons sun-ripened with sea salt and roasted spices.',
+    category: 'veg',
+    description: 'Made the patient way. Whole thin-skinned juicy yellow lemons aged under the blazing afternoon sun in glass jars until the citrus skin turns tender and translucent. Finished with crackling mustard seeds, spicy chillies, and fragrant hing.',
+    flavorProfile: 'Vibrant citrus explosion, mellow bitter-sweet rind, and crisp spice bite.',
+    spiceLevel: 3,
+    weights: [
+      { weight: '250g', price: 190, inStock: true },
+      { weight: '400g', price: 290, inStock: true },
+      { weight: '800g', price: 540, inStock: true }
+    ],
+    ingredients: [
+      'Sun-Ripened Country Lemons',
+      'Cold-Pressed Gingelly Oil',
+      'Pure Rock Salt',
+      'Red Chilli Powder',
+      'Toasted Fenugreek & Mustard',
+      'Green Chillies & Ginger',
+      'Natural Lemon Juice',
+      'Asafoetida'
+    ],
+    aromaNotes: ['Sun-cured citrus peel', 'Pungent mustard oil', 'Spicy ginger', 'Sharp rock salt'],
+    pairingSuggestions: ['Classic curd rice with green chilli', 'Dal khichdi with ghee', 'Aloo paratha', 'Plain kanji'],
+    storageAdvice: 'Improves with age. Store in a dry cupboard away from direct sunlight.',
+    shelfLife: '12 months.',
+    bgGradient: 'from-[#3B3012] via-[#271F0B] to-[#171206]',
+    accentColor: '#E6B94D',
+    textColor: '#FFF5E8',
+    cardBg: '#FAF7ED',
+    pickleColor: '#D99B16',
+    pickleOilColor: '#F5B72C',
+    textureDetails: 'Translucent yellow citrus wedges bathed in sunset-gold mustard oil with red chilli flakes.',
+    image: '/jars/lemon-pickle.jpg',
+    featured: false
+  },
+  {
+    id: 'chilli-tamarind-pickle',
+    slug: 'chilli-tamarind-pickle',
+    number: '08',
+    name: 'Chilli + Tamarind Pickle',
+    shortName: 'Chilli Tamarind',
+    tagline: 'Fiery birds-eye chillies mashed with aged black tamarind and jaggery.',
+    category: 'veg',
+    description: 'An explosive culinary shockwave. Plump green and fiery red chillies slow-braised with aged dark tamarind pulp, roasted spices, and a whisper of sugarcane jaggery to round out the blazing fire. Unapologetically bold.',
+    flavorProfile: 'Blazing upfront heat, deep puckering sourness, and a rounded savory finish.',
+    spiceLevel: 5,
+    weights: [
+      { weight: '250g', price: 220, inStock: true },
+      { weight: '400g', price: 330, inStock: true },
+      { weight: '800g', price: 610, inStock: true }
+    ],
+    ingredients: [
+      'Whole Red & Green Chillies',
+      'Aged Dark Tamarind Pulp',
+      'Cold-Pressed Sesame Oil',
+      'Garlic & Ginger',
+      'Organic Palm Jaggery',
+      'Fenugreek & Mustard',
+      'Curry Leaves & Sea Salt'
+    ],
+    aromaNotes: ['Sour tamarind tang', 'Blistering chilli fire', 'Toasted sesame oil', 'Curry leaf fragrance'],
+    pairingSuggestions: ['Steamed idlis & molagapodi', 'Ven pongal with ghee', 'Curd rice & papadam', 'Crisp samosas'],
+    storageAdvice: 'Store tightly capped. Keep dry.',
+    shelfLife: '9 months.',
+    bgGradient: 'from-[#3B1516] via-[#2A0E0F] to-[#1A0809]',
+    accentColor: '#B52A24',
+    textColor: '#FFF5E8',
+    cardBg: '#FAF1F1',
+    pickleColor: '#8C1F1F',
+    pickleOilColor: '#C42F2F',
+    textureDetails: 'Coarsely crushed red and green peppers interwoven with thick dark tamarind glaze.',
+    image: '/jars/chilli-tamarind-pickle.jpg',
+    featured: false
+  },
+  {
+    id: 'lemon-dates-pickle',
+    slug: 'lemon-dates-pickle',
+    number: '09',
+    name: 'Lemon Dates Fusion Pickle',
+    shortName: 'Lemon Dates',
+    tagline: 'Sun-cured citrus meets velvety dark dates in an irresistible harmony.',
+    category: 'veg',
+    description: 'The best of both worlds. The sharp, vibrant acidity of sun-ripened lemons meets the rich, caramelly softness of dark dates. Slow-cooked with aromatic spices, this unique blend delivers an unforgettable interplay of sweet, sour, and fiery.',
+    flavorProfile: 'Zesty lemon crunch followed immediately by luscious date sweetness and warm chilli undertones.',
+    spiceLevel: 3,
+    weights: [
+      { weight: '250g', price: 250, inStock: true },
+      { weight: '400g', price: 380, inStock: true },
+      { weight: '800g', price: 710, inStock: true }
+    ],
+    ingredients: [
+      'Country Lemons',
+      'Pitted Arabian Black Dates',
+      'Gingelly Oil',
+      'Crushed Garlic Pearls',
+      'Kashmiri Chilli Powder',
+      'Fenugreek & Mustard Seed',
+      'Vinegar',
+      'Rock Salt & Hing'
+    ],
+    aromaNotes: ['Bright citrus peel', 'Sweet molasses', 'Toasted mustard seeds', 'Vinegar zing'],
+    pairingSuggestions: ['Kerala wedding sadhya feast', 'Fried chicken & rice', 'Warm flatbreads', 'Mild vegetable pulao'],
+    storageAdvice: 'Keep in cool dry conditions. Use dry spoon only.',
+    shelfLife: '10 months.',
+    bgGradient: 'from-[#3A2416] via-[#28180E] to-[#180E08]',
+    accentColor: '#BF5722',
+    textColor: '#FFF5E8',
+    cardBg: '#FAF3EE',
+    pickleColor: '#853D1C',
+    pickleOilColor: '#BA5624',
+    textureDetails: 'Glossy blend of golden lemon skins and soft brown dates in a spiced ruby gravy.',
+    image: '/jars/lemon-dates-pickle.jpg',
+    featured: true
+  },
+  {
+    id: 'yam-pickle',
+    slug: 'yam-pickle',
+    number: '10',
+    name: 'Spiced Yam (Chena) Pickle',
+    shortName: 'Yam Pickle',
+    tagline: 'Crisp hand-cut elephant yam cubes tossed in roasted shallots and mustard.',
+    category: 'veg',
+    description: 'A traditional southern secret. Elephant foot yam (chena/suran) peeled, diced into bite-sized cubes, sun-dried, fried till lightly crispy, and slow-tempered with freshly crushed shallots, ginger, and pungent gingelly oil. Earthy and endlessly addictive.',
+    flavorProfile: 'Satisfying toothsome crunch, nutty earthiness, and pungent shallot-mustard gravy.',
+    spiceLevel: 3,
+    weights: [
+      { weight: '250g', price: 210, inStock: true },
+      { weight: '400g', price: 310, inStock: true },
+      { weight: '800g', price: 580, inStock: true }
+    ],
+    ingredients: [
+      'Elephant Foot Yam (Chena/Suran)',
+      'Cold-Pressed Sesame Oil',
+      'Shallots (Small Onions)',
+      'Garlic & Ginger Slivers',
+      'Red Chilli Powder & Turmeric',
+      'Curry Leaves',
+      'Natural Vinegar',
+      'Mustard & Fenugreek Powder',
+      'Sea Salt'
+    ],
+    aromaNotes: ['Roasted shallots', 'Earthy fried yam', 'Curry leaf crunch', 'Warm mustard oil'],
+    pairingSuggestions: ['Kanji (rice gruel) with coconut chammanthi', 'Moru curry rice', 'Chapati', 'Papad snack'],
+    storageAdvice: 'Store in cool ambient pantry. Seal lid tightly.',
+    shelfLife: '6 months.',
+    bgGradient: 'from-[#30261A] via-[#211A11] to-[#14100A]',
+    accentColor: '#8C673B',
+    textColor: '#FFF5E8',
+    cardBg: '#F7F4EE',
+    pickleColor: '#6B4C27',
+    pickleOilColor: '#9C6F3B',
+    textureDetails: 'Square golden-fried yam cubes coated in thick roasted onion and red pepper emulsion.',
+    image: '/jars/yam-pickle.jpg',
+    featured: false
+  },
+  {
+    id: 'raisins-pickle',
+    slug: 'raisins-pickle',
+    number: '11',
+    name: 'Spicy Golden Raisins Pickle',
+    shortName: 'Raisins Pickle',
+    tagline: 'Plump golden kishmish infused with cardamom, green chillies and tangy glaze.',
+    category: 'veg',
+    description: 'An artisanal marvel. Select jumbo golden raisins (kishmish) rehydrated in spiced lemon-vinegar marinade, cooked with whole green chillies, cracked mustard, and an aromatic pinch of wild cardamom. Each bite bursts with sweet juice and hot spice.',
+    flavorProfile: 'Juicy popping burst of sweetness balanced with tangy brine and gentle warming chilli heat.',
+    spiceLevel: 2,
+    weights: [
+      { weight: '250g', price: 260, inStock: true },
+      { weight: '400g', price: 390, inStock: true },
+      { weight: '800g', price: 730, inStock: true }
+    ],
+    ingredients: [
+      'Jumbo Golden Afghan Raisins (Kishmish)',
+      'Cold-Pressed Gingelly Oil',
+      'Crushed Ginger & Garlic',
+      'Whole Slit Green Chillies',
+      'Natural Brewed Vinegar',
+      'Crushed Cardamom & Clove',
+      'Mild Kashmiri Chilli',
+      'Mustard Seeds & Sea Salt'
+    ],
+    aromaNotes: ['Wild cardamom essence', 'Sweet raisin nectar', 'Vinegar tang', 'Fresh green chilli'],
+    pairingSuggestions: ['Hyderabadi Dum Biryani', 'Pulao & raita', 'Artisanal cheese platter', 'Warm flatbreads'],
+    storageAdvice: 'Keep dry. Refrigerate after opening to preserve plumpness.',
+    shelfLife: '8 months.',
+    bgGradient: 'from-[#382619] via-[#261910] to-[#170F0A]',
+    accentColor: '#B87A3B',
+    textColor: '#FFF5E8',
+    cardBg: '#F8F3EC',
+    pickleColor: '#8A5623',
+    pickleOilColor: '#C4833E',
+    textureDetails: 'Swollen amber golden raisins glistening in an aromatic spicy glaze with cardamom specks.',
+    image: '/jars/raisins-pickle.jpg',
+    featured: false
+  }
+];
+
+export const REVIEWS: ReviewItem[] = [
+  {
+    id: 'rev-1',
+    author: 'Fatima Zohra',
+    location: 'Kochi, Kerala',
+    rating: 5,
+    date: 'Sample Customer Review',
+    review: 'The Tender Beef Pickle is out of this world! You can taste that it is made in small batches with genuine cold-pressed oil, not machine processed. The meat is so tender and flavorful.',
+    verified: true,
+    pickleName: 'Tender Beef Pickle'
+  },
+  {
+    id: 'rev-2',
+    author: 'Dr. Rahul Menon',
+    location: 'Bangalore, Karnataka',
+    rating: 5,
+    date: 'Sample Customer Review',
+    review: 'Tried the Heritage Raw Mango and Coastal Prawns. The crunch on the mango with that stone-ground mustard is exactly what my grandmother used to make. Outstanding packaging and glass jar quality!',
+    verified: true,
+    pickleName: 'Heritage Raw Mango Pickle'
+  },
+  {
+    id: 'rev-3',
+    author: 'Ananya Sharma',
+    location: 'Mumbai, Maharashtra',
+    rating: 5,
+    date: 'Sample Customer Review',
+    review: 'The Sweet & Spicy Dates Pickle is magical with biryani. It hits that sweet spot of royal malabar feasts without any artificial aftertaste or oily heaviness.',
+    verified: true,
+    pickleName: 'Sweet & Spicy Dates Pickle'
+  },
+  {
+    id: 'rev-4',
+    author: 'Kabeer Hussain',
+    location: 'Calicut, Kerala',
+    rating: 5,
+    date: 'Sample Customer Review',
+    review: 'Being away from home, finding non-veg pickles that taste homemade is nearly impossible until I found SHE PICKLE. The Coastal Prawns and Country Chicken are staples in my pantry now.',
+    verified: true,
+    pickleName: 'Coastal Prawns Pickle'
+  },
+  {
+    id: 'rev-5',
+    author: 'Meenakshi Sundaram',
+    location: 'Chennai, Tamil Nadu',
+    rating: 5,
+    date: 'Sample Customer Review',
+    review: 'Sun-Cured Lemon pickle with curd rice is pure bliss. The lemon peel is tender, not bitter, and the gingelly oil fragrance fills the room the moment you pop open the seal.',
+    verified: true,
+    pickleName: 'Sun-Cured Lemon Pickle'
+  }
+];
+
+export const FAQS: FaqItem[] = [
+  {
+    category: 'Products',
+    question: 'What types of pickles are available?',
+    answer: 'SHE PICKLE currently crafts 11 signature homemade recipes: 4 Non-Vegetarian varieties (Tender Beef, Coastal Prawns, Country Chicken, and Spiced Tuna) and 7 Vegetarian varieties (Heritage Raw Mango, Sweet & Spicy Dates, Sun-Cured Lemon, Chilli + Tamarind, Lemon Dates Fusion, Spiced Yam/Chena, and Spicy Golden Raisins).'
+  },
+  {
+    category: 'Products',
+    question: 'Do you have vegetarian and non-vegetarian pickles?',
+    answer: 'Yes! We have dedicated, completely separate preparation facilities and utensils for our vegetarian pickles and non-vegetarian pickles to ensure strict purity, hygiene, and authenticity for all dietary preferences.'
+  },
+  {
+    category: 'Ingredients',
+    question: 'Do your pickles contain added preservatives?',
+    answer: 'No chemical preservatives (such as sodium benzoate or synthetic additives) are ever used. Our pickles are naturally cured and preserved through age-old traditional techniques: pure cold-pressed gingelly (sesame) oil, rock salt, naturally brewed vinegar, and sun-ripened spices.'
+  },
+  {
+    category: 'Ingredients',
+    question: 'Do your products contain added colours?',
+    answer: 'Never. The deep, radiant red and golden hues come entirely from stone-ground Kashmiri chillies, pure turmeric, ripe mangoes, roasted shallots, and sun-dried spices. Zero artificial dyes or coloring agents.'
+  },
+  {
+    category: 'Products',
+    question: 'What sizes are available?',
+    answer: 'Each pickle is available in three carefully weighed options: 250g (perfect trial & personal size), 400g (ideal family pantry size), and 800g (value jar for true pickle lovers).'
+  },
+  {
+    category: 'Ordering & Shipping',
+    question: 'How can I place an order?',
+    answer: 'You can order directly through our secure online store by adding jars to your cart and proceeding to checkout. Alternatively, we offer quick Direct WhatsApp Ordering where your cart items are formatted into a ready-to-send WhatsApp message for instant assistance.'
+  },
+  {
+    category: 'Ordering & Shipping',
+    question: 'Do you offer home delivery?',
+    answer: 'Yes! We offer doorstep delivery across India. Orders are dispatched in heavy-duty protective cushioned packaging to ensure your premium glass jars arrive safely and intact. Free shipping is automatically applied on all orders above ₹699.'
+  },
+  {
+    category: 'Storage',
+    question: 'How should I store the pickles?',
+    answer: 'Store in a cool, dry place away from direct sunlight. Always use a clean, completely dry wooden or stainless steel spoon. Ensure the top layer of oil covers the pickle contents, which acts as a natural barrier against air and moisture.'
+  },
+  {
+    category: 'Storage',
+    question: 'How long can I store an opened jar?',
+    answer: 'Once opened, non-vegetarian pickles are best enjoyed within 3 to 4 months (refrigeration recommended after opening for maximum freshness). Vegetarian pickles have a shelf-life of 6 to 12 months when stored properly with a dry spoon.'
+  }
+];
+
